@@ -40,13 +40,14 @@
                     writer.Write("  ");
                     writer.WriteLine();
 
-                    writer.Write("Slice " + slice + ":");
+                    writer.Write("    Slice " + slice + ":");
 
                     writer.Write("  ");
                     writer.WriteLine();
 
                     for (int row = 0; row < 25; row++)
                     {
+                        writer.Write("    ");
                         for (int col = 0; col < 25; col++)
                         {
                             writer.Write(asciiArt[row, col]);
