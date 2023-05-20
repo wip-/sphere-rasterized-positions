@@ -15,6 +15,8 @@
             using (StreamWriter writer = new StreamWriter("../../../readme.md"))
             {
                 writer.Write("This program generates this readme:");
+                
+                writer.Write("  ");
                 writer.WriteLine();
 
                 for (int slice = 0; slice < 25; slice++)
@@ -35,15 +37,21 @@
                         }
                     }
 
+                    writer.Write("  ");
                     writer.WriteLine();
+
                     writer.Write("Slice " + slice + ":");
+
+                    writer.Write("  ");
                     writer.WriteLine();
+
                     for (int row = 0; row < 25; row++)
                     {
                         for (int col = 0; col < 25; col++)
                         {
                             writer.Write(asciiArt[row, col]);
                         }
+                        writer.Write("  ");
                         writer.WriteLine();
                     }
                 }
